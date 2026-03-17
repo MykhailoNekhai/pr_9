@@ -1,8 +1,9 @@
 package ua.uni;
 
+import lombok.Builder;
 import lombok.Value;
 
-@Value
+@Builder
 public class Checkoutrequest {
     private int value;
     private int id;

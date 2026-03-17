@@ -1,15 +1,16 @@
 package ua.uni;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
-public class foutrh {
+@Getter @Setter
+public class fourth {
     private int id;
     private String name;
     private String email;
 
     @Override
     public String toString() {
-        return "foutrh{" +
+        return "fourth{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
@@ -17,11 +18,11 @@ public class foutrh {
     }
 
     public static void main(String[] args) {
-        foutrh foutrh = new foutrh();
-        foutrh.setId(3);
-        foutrh.setName("name");
-        foutrh.setEmail("example@gmail.com");
+        fourth fourth = new fourth();
+        fourth.setId(3);
+        fourth.setName("name");
+        fourth.setEmail("example@gmail.com");
 
-        System.out.println(foutrh.toString());
+        System.out.println(fourth.toString());
     }
 }
